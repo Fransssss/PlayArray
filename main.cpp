@@ -1,3 +1,8 @@
+// Title: Basic Array, for loop
+// Purpose: Practice basic command with different type of array, for loop, let user determines a command to be executed
+// Class: Enjoy the process
+// Author: Fransiskus Agapa
+
 #include <iostream>
 #include <string>
 
@@ -10,7 +15,7 @@ int main() {
     string text[] = {"Apple", "Orange", "Mango"};
     int nums[] = {5, 4, 3, 2, 1};
     char option;
-    int sizeStrArr = sizeof(text)/sizeof(text[0]);                  // determine the size of string array
+    int sizeStrArr = sizeof(text)/sizeof(text[0]);                     // determine the size of string array
     int sizeNumsArr = sizeof(nums)/sizeof(nums[0]);                    // determine teh size of int array
 
     cout << " let's play with array. shall we! " << endl;
@@ -28,7 +33,6 @@ int main() {
         }
     } else if( option == 'N'|| option == 'n')
     {
-        // do nums things
         int num = 0;
         cout << "Here is the input in int array " << endl;
         for(size_t i = 0; i < sizeNumsArr; ++i)
